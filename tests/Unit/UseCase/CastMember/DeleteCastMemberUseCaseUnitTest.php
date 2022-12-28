@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid as RamseyUuid;
 use stdClass;
 
-class DeleteCastMermberUseCaseUnitTest extends TestCase
+class DeleteCastMemberUseCaseUnitTest extends TestCase
 {
     public function test_delete()
     {

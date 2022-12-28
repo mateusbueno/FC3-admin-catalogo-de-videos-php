@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "mateusbueno/app-php-video-catalog",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "Microservice Video Catalog PHP",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {

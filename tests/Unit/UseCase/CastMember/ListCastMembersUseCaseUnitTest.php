@@ -10,7 +10,7 @@ use Mockery;
 use PHPUnit\Framework\TestCase;
 use Tests\Unit\UseCase\UseCaseTrait;
 
-class ListCastMermbersUseCaseUnitTest extends TestCase
+class ListCastMembersUseCaseUnitTest extends TestCase
 {
     use UseCaseTrait;
 

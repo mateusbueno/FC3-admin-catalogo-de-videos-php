@@ -6,7 +6,7 @@ use Core\Domain\Entity\Category as CategoryEntity;
 use Core\Domain\Repository\CategoryRepositoryInterface;
 use Core\UseCase\Category\ListCategoryUseCase;
 use Core\UseCase\DTO\Category\CategoryInputDto;
-use Core\UseCase\DTO\Category\CategoryOutupDto;
+use Core\UseCase\DTO\Category\CategoryOutputDto;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 use Ramsey\Uuid\Uuid;
@@ -37,7 +37,7 @@ class ListCategoryUseCaseUnitTest extends TestCase
         $useCase = new ListCategoryUseCase($this->mockRepo);
         $response = $useCase->execute($this->mockInputDto);
 
-        $this->assertInstanceOf(CategoryOutupDto::class, $response);
+        $this->assertInstanceOf(CategoryOutputDto::class, $response);
         $this->assertEquals('teste category', $response->name);
         $this->assertEquals($id, $response->id);
 
